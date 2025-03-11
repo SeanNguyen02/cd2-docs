@@ -55,30 +55,30 @@ Main controls for enemy resistance, swarm and wave intervals and enemy counts. P
 | Field | Description |
 | ------- | ----------| 
 | BaseHazard | Declares a base vanilla hazard, with values from 1 to 5. When a CD2 JSON doesn't specify a certain field, the value is taken from the `BaseHazard` specified here.|
-| ExtraLargeEnemyDamageResistance ||
-| ExtraLargeEnemyDamageResistanceB ||
-| ExtraLargeEnemyDamageResistanceC ||
-| ExtraLargeEnemyDamageResistanceD ||
-| EnemyDamageResistance ||
-| SmallEnemyDamageResistance ||
-| EnemyDamageResistance ||
-| EncounterDifficulty ||
-| StationaryDifficulty ||
-| EnemyCountModifier ||
-| EnemyWaveInterval ||
-| EnemyNormalWaveInterval ||
-| EnemyNormalWaveDifficulty ||
-| EnemyDiversity ||
-| StationaryEnemyDiversity ||
-| VeteranNormal ||
-| VeteranLarge ||
-| EnviromentalDamageModifier ||
+| ExtraLargeEnemyDamageResistance | Damage resistance for Dreadnoughts (the three variants: Classic, Hiveguard, and Twins). |
+| ExtraLargeEnemyDamageResistanceB | Damage resistance for the Korlok Tyrant Weed. |
+| ExtraLargeEnemyDamageResistanceC | Damage resistance for the OMEN Modular Exterminator. |
+| ExtraLargeEnemyDamageResistanceD | Damage resistance for Elite enemies. |
+| EnemyDamageResistance | Damage resistance of most larger enemies in the game (e.g., Praetorians, Oppressors, Menaces, Goo Bombers, and Bulk Detonators, etc).  |
+| SmallEnemyDamageResistance | Damage resistance of enemies not covered by the other two resistance fields (e.g., Gruntt, Grunt veterans, Mactera, Mactera veterans, swarmers, etc. ) |
+| EnemyDamageModifier | Damage enemies will deal with ALL attacks.|
+| EnemyCountModifier | Amount of enemies that the game will spawn at any given time. |
+| EncounterDifficulty | How many “Encounter” enemies will spawns (e.g., Grunt packs, Praetorians, Mactera groups, etc). |
+| StationaryDifficulty | How many stationary enemies will spawn (e.g., Spitballers, Barragers, Brood Nexii, Breeders and Cave Leeches). |
+| EnemyWaveInterval | Time between waves (announced by Mission Control). |
+| EnemyNormalWaveInterval | Interval between normal waves. |
+| EnemyNormalWaveDifficulty | Difficulty of normal waves (non-swarm waves). |
+| EnemyDiversity | Number of unique enemy types that can spawn in a spawn event. |
+| StationaryEnemyDiversity | Number of unique stationary enemy types that can spawn in a spawn event.|
+| VeteranNormal | Percentage of veteran variants of Grunts and Macteras that spawn|
+| VeteranLarge | Percentage of veteran variants Praetorians that spawn |
+| EnviromentalDamageModifier | Amount of damage players take from environmental hazards such as fire, frost, and radiation |
 | PointExtractionScalar ||
-| FriendlyFireModifier || 
-| WaveStartDelayScale ||
-| SpeedModifier ||
-| AttackCooldownModifier ||
-| ProjectileSpeedModifier ||
+| FriendlyFireModifier | Friendly fire damage players will deal to each other| 
+| WaveStartDelayScale | How quickly the first swarm on Mining missions will spawn. |
+| SpeedModifier | Movement speed of ground-based enemies. |
+| AttackCooldownModifier | How quickly and frequently enemies can attack |
+| ProjectileSpeedModifier | Speed of enemy projectiles. |
 | HealthRegenerationMax | Maximum health that the dwarves regenerate naturally to. |
 | ReviveHealthRatio | Health points after revive. |
 
@@ -87,8 +87,8 @@ Offers some controls related to the players.
 
 | Field | Description |
 | ------ | ---------|
-| RegenHealthPerSecond | |
-| RegenDelayAfterDamage | |
+| RegenHealthPerSecond | Health regeneration rate. |
+| RegenDelayAfterDamage | Health regeneration delay after taking damage. |
 | Scale | Player size. |
 
 ## Enemies / EnemiesNoSync
@@ -103,10 +103,10 @@ Controls for the Drilldozer in Escort missions.
 | HealPerTickUnderAttack | Float | 4.5 | Currently unsupported. |
 | MaxAttackersOmoranFight | Float | 6 | Currently unsupported. |
 | MaxHealth | Float | 520| Currently unsupported. |
-| FriendlyFireModifier | Float | 0.1 | |
-| NeutralDamageModifier | Float | 0.1 | |
-| BigHitDamageModifier |  Float | 0.5 | |
-| BigHitDamageReductionThreshold | Float | 6 | |
+| FriendlyFireModifier | Float | 0.1 | How much damage players will deal to Doretta. |
+| NeutralDamageModifier | Float | 0.1 | How much damage an enemy will deal to Doretta. |
+| BigHitDamageModifier |  Float | 0.5 | How much damage a “big hit” will deal to Doretta. |
+| BigHitDamageReductionThreshold | Float | 6 | How large an instance of damage must be before it is considered a “big hit”. |
 | PST_PoisonResistance | Float | 0.25 | Currently unsupported. |
 | PST_RadiationResistance | Float |  0.5 | Currently unsupported. |
 | PST_ExplosionResistance | Float |  0.5 | Currently unsupported. |
